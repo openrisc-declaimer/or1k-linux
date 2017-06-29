@@ -30,6 +30,9 @@
 #include <asm/cache.h>
 #include <asm-generic/vmlinux.lds.h>
 
+/* we are used compiler or1k-elf, so output format is elf32-or1k. */
+#define __OR1K__
+
 #ifdef __OR1K__
 #define __OUTPUT_FORMAT        "elf32-or1k"
 #else
